@@ -1,6 +1,6 @@
 {
   "name": "@wide/pageflip",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Handle page transition when navigating",
   "license": "MIT",
   "author": "Aymeric Assier (https://github.com/myeti)",
@@ -9,23 +9,23 @@
     "Julien Martins Da Costa (https://github.com/jdacosta)"
   ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/wide/pageflip.git"
+    "type": "git",
+    "url": "https://github.com/wide/pageflip.git"
   },
   "main": "lib",
   "engines": {
-    "node": ">=10.13.0"
+    "node": ">=12.18.0"
   },
   "scripts": {
-    "build": "babel src/ -d lib/ --presets babel-preset-es2015",
+    "build": "babel src/ -d lib/ --presets=@babel/preset-env",
     "prepare": "rimraf lib/ && npm run build"
   },
   "dependencies": {
     "pjax": "^0.2.8"
   },
   "devDependencies": {
-    "babel-cli": "6.26.0",
-    "babel-preset-es2015": "6.24.1",
-    "rimraf": "^3.0.0"
+    "@babel/cli": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "rimraf": "^3.0.2"
   }
 }
